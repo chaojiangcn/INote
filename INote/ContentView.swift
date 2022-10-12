@@ -12,7 +12,7 @@ struct ContentView: View {
     @State var noteItems: [ArticleModel] = [ArticleModel(writeTime: "2022.09.17", title: "第一条笔记", content: "快来使用念头笔记记录生活吧～快来使用念头笔记记录生活吧～"),ArticleModel(writeTime: "2022.09.17", title: "第一条笔记", content: "快来使用念头笔记记录生活吧～快来使用念头笔记记录生活吧～")]
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack(){
                 if noteItems.count == 0 {
                     NoDataView()
@@ -22,10 +22,13 @@ struct ContentView: View {
                         NoteListView(noteItems: $noteItems)
                     }
                 }
+                
                 newBtnView()
-            }.navigationBarTitle("奇思笔记", displayMode: .inline)
+            }
+            .navigationTitle("首页")
+            .navigationBarTitleDisplayMode(.inline)
+            
         }
-        
     }
     
     // 新建笔记按钮
@@ -35,11 +38,14 @@ struct ContentView: View {
             HStack{
                 Spacer()
                 Button(action:{
-
+                    
                 }){
-                    Image(systemName: "plus.circle.fill")
-                        .font(.system(size: 48))
-                        .foregroundColor(.blue)
+                    NavigationLink(destination: EditArticleView()) {
+                        Image(systemName: "plus.circle.fill")
+                            .font(.system(size: 48))
+                            .foregroundColor(.blue)
+                    }
+                    
                     
                 }
             }

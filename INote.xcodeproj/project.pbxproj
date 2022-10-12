@@ -18,6 +18,7 @@
 		0BF88C4D28F452080074602D /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF88C4C28F452080074602D /* ArticleModel.swift */; };
 		0BF88C4F28F454130074602D /* NoteListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF88C4E28F454130074602D /* NoteListRowView.swift */; };
 		0BF88C5128F455AF0074602D /* NoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF88C5028F455AF0074602D /* NoteListView.swift */; };
+		0BF88C5328F5904F0074602D /* EditArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF88C5228F5904F0074602D /* EditArticleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		0BF88C4C28F452080074602D /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 		0BF88C4E28F454130074602D /* NoteListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListRowView.swift; sourceTree = "<group>"; };
 		0BF88C5028F455AF0074602D /* NoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListView.swift; sourceTree = "<group>"; };
+		0BF88C5228F5904F0074602D /* EditArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditArticleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				0BF88C4928F440B70074602D /* NoDataView.swift */,
 				0BF88C4E28F454130074602D /* NoteListRowView.swift */,
 				0BF88C5028F455AF0074602D /* NoteListView.swift */,
+				0BF88C5228F5904F0074602D /* EditArticleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			files = (
 				0BF88C2128F43FE50074602D /* ContentView.swift in Sources */,
 				0BF88C4F28F454130074602D /* NoteListRowView.swift in Sources */,
+				0BF88C5328F5904F0074602D /* EditArticleView.swift in Sources */,
 				0BF88C5128F455AF0074602D /* NoteListView.swift in Sources */,
 				0BF88C4A28F440B70074602D /* NoDataView.swift in Sources */,
 				0BF88C4D28F452080074602D /* ArticleModel.swift in Sources */,
@@ -449,6 +453,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"INote/Preview Content\"";
+				DEVELOPMENT_TEAM = G7DCZXSHL3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -477,6 +482,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"INote/Preview Content\"";
+				DEVELOPMENT_TEAM = G7DCZXSHL3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

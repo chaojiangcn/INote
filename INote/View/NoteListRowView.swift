@@ -28,7 +28,7 @@ struct NoteListRowView: View {
             Spacer()
             
             Button(action: {
-                
+                print(noteItem)
             }) {
                 Image(systemName: "ellipsis")
                     .foregroundColor(.gray)
