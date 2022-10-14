@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct NoteListView: View {
-    @Binding var noteItems:[ArticleModel]
+    
+    @EnvironmentObject var noteItems: IndexViewModel
     
     var body: some View {
         List {
-            ForEach(noteItems) { noteItem in
+            ForEach(noteItems.noteModels) { noteItem in
                 NoteListRowView(noteItem: noteItem)
             }
         }
