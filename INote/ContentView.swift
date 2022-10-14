@@ -9,17 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     @State var searchText = ""
-    @State var noteItems: [ArticleModel] = [ArticleModel(writeTime: "2022.09.17", title: "第一条笔记", content: "快来使用念头笔记记录生活吧～快来使用念头笔记记录生活吧～"),ArticleModel(writeTime: "2022.09.17", title: "第一条笔记", content: "快来使用念头笔记记录生活吧～快来使用念头笔记记录生活吧～")]
+    @EnvironmentObject var noteItemsVM: IndexViewModel
     
     var body: some View {
         NavigationStack {
             ZStack(){
-                if noteItems.count == 0 {
+                if noteItemsVM.noteModels.count == 0 {
                     NoDataView()
                 } else {
                     VStack{
                         searchBarView()
-                        NoteListView(noteItems: $noteItems)
+                        NoteListView()
                     }
                 }
                 

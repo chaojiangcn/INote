@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BEE402F28F9B69B007D884D /* IndexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEE402E28F9B69B007D884D /* IndexViewModel.swift */; };
 		0BF88C1F28F43FE50074602D /* INoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF88C1E28F43FE50074602D /* INoteApp.swift */; };
 		0BF88C2128F43FE50074602D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF88C2028F43FE50074602D /* ContentView.swift */; };
 		0BF88C2328F43FE80074602D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BF88C2228F43FE80074602D /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BEE402E28F9B69B007D884D /* IndexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewModel.swift; sourceTree = "<group>"; };
 		0BF88C1B28F43FE50074602D /* INote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF88C1E28F43FE50074602D /* INoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INoteApp.swift; sourceTree = "<group>"; };
 		0BF88C2028F43FE50074602D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BEE402D28F9B663007D884D /* VIewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0BEE402E28F9B69B007D884D /* IndexViewModel.swift */,
+			);
+			path = VIewModel;
+			sourceTree = "<group>";
+		};
 		0BF88C1228F43FE50074602D = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +114,7 @@
 		0BF88C1D28F43FE50074602D /* INote */ = {
 			isa = PBXGroup;
 			children = (
+				0BEE402D28F9B663007D884D /* VIewModel */,
 				0BF88C4B28F451E80074602D /* Model */,
 				0BF88C4828F440990074602D /* View */,
 				0BF88C1E28F43FE50074602D /* INoteApp.swift */,
@@ -291,6 +302,7 @@
 				0BF88C2128F43FE50074602D /* ContentView.swift in Sources */,
 				0BF88C4F28F454130074602D /* NoteListRowView.swift in Sources */,
 				0BF88C5328F5904F0074602D /* EditArticleView.swift in Sources */,
+				0BEE402F28F9B69B007D884D /* IndexViewModel.swift in Sources */,
 				0BF88C5128F455AF0074602D /* NoteListView.swift in Sources */,
 				0BF88C4A28F440B70074602D /* NoDataView.swift in Sources */,
 				0BF88C4D28F452080074602D /* ArticleModel.swift in Sources */,

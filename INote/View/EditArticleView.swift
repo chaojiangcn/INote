@@ -8,16 +8,54 @@
 import SwiftUI
 
 struct EditArticleView: View {
-    @State private var content: String = "This is some editable text..."
+    @State private var content: String = "内容"
     @State private var title:String = ""
     
+    @EnvironmentObject var IndexVM: IndexViewModel
+    //确保试图展示
+    @Environment(\.isPresented) var isPresented
+    //返回上一页
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack(){
                 VStack(alignment: .leading, spacing: 5){
                     TextField("请输入文章标题", text: $title)
                     TextEditor(text: $content)
+                        .foregroundColor(Color.gray)
+                        .font(.custom("HelveticaNeue", size: 16))
                 }.padding(.horizontal, 10)
+            }
+            .toolbarRole(.editor)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "scribble.variable")
+                    }
+                }
+                ToolbarItem(placement:.navigationBarTrailing) {
+                    Button(action: {
+                        if isPresented {
+                            IndexVM.addArticle(writeTime: "2022-10-17", title: title, content: content)
+                            dismiss()
+                        } else {
+                            print("返回错误")
+                        }
+                        
+                    }, label: {
+                        Text("Done")
+                    })
+                }
+                ToolbarItem(placement: ToolbarItemPlacement.bottomBar) {
+                    Button(action: {
+
+                    }, label: {
+                        Image(systemName: "lock.doc.fill")
+                    })
+                }
             }
         }
         

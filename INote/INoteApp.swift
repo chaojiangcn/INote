@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct INoteApp: App {
+    @StateObject var noteItemsVM: IndexViewModel = IndexViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(noteItemsVM)
         }
     }
 }
